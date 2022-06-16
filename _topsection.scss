@@ -1,0 +1,35 @@
+@import "_variables.scss";
+.top-section {
+  header {
+    h1 {
+      color: map-get($colors, deep-blue);
+      font: {
+        size: calc($body-font * 50 / 16);
+        weight: bolder;
+      }
+      line-height: calc($body-font * 68.09 / 16);
+      max-width: 486px;
+      margin-bottom: 24px;
+
+      @media (max-width: 600px) {
+        font-size: 3em;
+        text-shadow: #132d54 2px 2px 1.5px;
+      }
+    }
+
+    p {
+      color: #132d54;
+      max-width: 470px;
+      line-height: 1.7em;
+    }
+    button {
+      margin-top: 24px;
+
+      @extend .pink-button;
+    }
+  }
+}
+
+img {
+  width: 100%;
+}

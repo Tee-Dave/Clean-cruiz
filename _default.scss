@@ -1,0 +1,35 @@
+@import "_variables.scss";
+
+@font-face {
+  font-family: "open s";
+  src: url(open-sans.regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(Roboto-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: {
+    family: map-get($font-families, main);
+    size: $body-font;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+figcaption {
+  display: none;
+}

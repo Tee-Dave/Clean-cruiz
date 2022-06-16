@@ -1,0 +1,41 @@
+@import "_variables.scss";
+.fourth-section {
+  margin-left: 1%;
+  h3 {
+    width: 20ch;
+    font: {
+      size: 1.5em;
+      weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      color: map-get($colors, primary-pink);
+      text-shadow: #132d54 2px 2px 1.5px;
+      text-align: center;
+    }
+  }
+
+  p {
+    margin-top: 2%;
+    max-width: 45%;
+    font: {
+      size: 0.8em;
+      weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      color: map-get($colors, primary-pink);
+      text-shadow: #132d54 2px 2px 1px;
+      text-align: center;
+    }
+  }
+  button {
+    margin-top: 2%;
+    @extend .pink-button;
+
+    @media (max-width: 600px) {
+      text-align: center;
+      box-shadow: #132d54 3px 3px 2px;
+    }
+  }
+}
